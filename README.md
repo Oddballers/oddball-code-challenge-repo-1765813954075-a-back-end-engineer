@@ -22,25 +22,6 @@ Dear Candidate, you are applying for a Back End Engineer position at our company
 - Follow RESTful best practices.
 - Ensure code is modular and well-documented.
 
-const deleteBook = (id: number) => {
-    books = books.filter(book => book.id !== id);
-};
-
-export { addBook, getBooks, getBookById, updateBook, deleteBook };
-```
-
-### File 3: `errorHandler.ts`
-```typescript
-import { Request, Response, NextFunction } from 'express';
-
-const errorHandler = (err: Error, req: Request, res: Response, next: NextFunction) => {
-    console.error(err);
-    res.status(500).json({ message: 'An unexpected error occurred' });
-};
-
-export default errorHandler;
-```
-
 ## Sample Data
 You can use the following sample data for testing your API:
 ```json
